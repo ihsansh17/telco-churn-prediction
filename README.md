@@ -32,7 +32,7 @@ The dataset is from [Kaggle](https://www.kaggle.com/datasets/johnflag/jb-link-te
 - **Purpose**:
   - Predict churn probabilities (0-1).
   - Provide reliable churn probabilities with well-calibrated predictions.
-- **Use Case**: Useful when retention strategies are based on predicted probabilities rather than just the predicted class. Well-suited for precise retention efforts when resources are limited.
+- **Use Case**: Useful when retention strategies are based on predicted probabilities rather than just the predicted class. Also well-suited for precise retention efforts when resources are limited.
 
 
 ---
