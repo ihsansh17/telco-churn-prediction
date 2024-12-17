@@ -26,34 +26,15 @@ The dataset is from [Kaggle](https://www.kaggle.com/datasets/johnflag/jb-link-te
 - **Purpose**:
   - Predict churn classes (churn/non-churn).
   - Identify as many churners as possible to minimize false negatives (churners predicted as non-churners).
-- **Use Case**: Useful for broad retention campaigns as well as high-stakes situations where losing any customer could lead to significant revenue loss.
+- **Use Case**: Useful for broad retention campaigns to target a larger group of at-risk customers as well as high-stakes situations where losing any customer could lead to significant revenue loss.
+- **Key Metric**: Model 1 achieved high recall, ensuring maximum capture of potential churners, making it suitable for scenarios where preventing churn is critical.
 
 ### 2. **Model 2: Brier Score-Optimized Model**
 - **Purpose**:
   - Predict churn probabilities (0-1).
   - Provide reliable churn probabilities with well-calibrated predictions.
-- **Use Case**: Useful when retention strategies are based on predicted probabilities rather than just the predicted class. Also well-suited for precise retention efforts when resources are limited.
-
-
----
-## Models
-
-### 1. **Model 1: Recall-Optimized Model**
-- **Purpose**: Predict churn classes (churn/non-churn). Identify as many churners as possible to minimize false negatives.
-- **Best Use Case**: Useful when the retention team has the budget for broad campaigns and wants to prevent as much churn as possible by casting a wide net. This model helps them target a larger group of at-risk customers. 
-- **Best Use Case**: 
-  - High-priority scenarios where missing a potential churner is costly.
-  - Early-stage churn prevention campaigns to cast a wide net.
-- **Benefit**: Maximizes the opportunity to engage with all possible churners, ensuring no one slips through.
-
-### 2. **Model 2: Brier Score-Optimized Model**
-In scenarios where decisions are based on predicted probabilities rather than just the predicted class, calibration is essential. For instance, in credit scoring, knowing the exact probability of default helps in setting appropriate interest rates.
-- **Purpose**: Provide reliable churn probabilities with well-calibrated predictions.
-- **Best Use Case**: Ideal when the team needs to focus on high-risk customers due to budget constraints. They can use Model 2’s reliable probabilities to prioritize customers more likely to churn, allowing for tailored, high-impact interventions.
-  - Decision-making where understanding the likelihood of churn is critical.
-  - Resource allocation to focus on customers with a higher risk of churning.
-- **Benefit**: Ensures actionable and precise insights, enabling data-driven decisions for targeted retention strategies.
-
+- **Use Case**: Useful for more tailored interventions especially when retention strategies are based on predicted probabilities rather than just the predicted classes. Also well-suited for precise retention efforts when resources are limited.
+- **Key Metric**: Model 2 provided calibrated probability estimates, ensuring accurate risk assessment, which can guide cost-sensitive retention strategies.
 ---
 ## Tools & Technologies
 
