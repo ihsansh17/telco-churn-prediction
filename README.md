@@ -34,7 +34,7 @@ The dataset is from [Kaggle](https://www.kaggle.com/datasets/johnflag/jb-link-te
   - Predict churn probabilities (0-1).
   - Provide reliable churn probabilities with well-calibrated predictions.
 - **Use Case**: Useful for more tailored interventions especially when retention strategies are based on predicted probabilities rather than just the predicted classes. Also well-suited for precise retention efforts when resources are limited.
-- **Key Metric**: Model 2 achieved a **Brier Score** of 0.08 (where 0 is perfect accuracy and 1 is the worst),  provided calibrated probability estimates, ensuring accurate risk assessment, which can guide cost-sensitive retention strategies.
+- **Key Metric**: Model 2 achieved a **Brier Score** of 0.08 (where 0 is perfect accuracy and 1 is the worst). So on average, the squared difference between the predicted probability and the actual outcome is 0.08, which indicates  provided calibrated probability estimates, ensuring accurate risk assessment, which can guide cost-sensitive retention strategies.
 ---
 ## Tools & Technologies
 
