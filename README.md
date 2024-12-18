@@ -27,14 +27,14 @@ The dataset is from [Kaggle](https://www.kaggle.com/datasets/johnflag/jb-link-te
   - Predict churn classes (churn/non-churn).
   - Identify as many churners as possible to minimize false negatives (churners predicted as non-churners).
 - **Use Case**: Useful for broad retention campaigns to target a larger group of at-risk customers as well as high-stakes situations where losing any customer could lead to significant revenue loss.
-- **Key Metric**: Model 1 achieved high recall, ensuring maximum capture of potential churners, making it suitable for scenarios where preventing churn is critical.
+- **Key Metric**: Model 1 achieved a **Recall** of 0.9, meaning it correctly identified 90% of churners.
 
 ### 2. **Model 2: Brier Score-Optimized Model**
 - **Purpose**:
   - Predict churn probabilities (0-1).
   - Provide reliable churn probabilities with well-calibrated predictions.
 - **Use Case**: Useful for more tailored interventions especially when retention strategies are based on predicted probabilities rather than just the predicted classes. Also well-suited for precise retention efforts when resources are limited.
-- **Key Metric**: Model 2 provided calibrated probability estimates, ensuring accurate risk assessment, which can guide cost-sensitive retention strategies.
+- **Key Metric**: Model 2 achieved a **Brier Score** of 0.08 (where 0 is perfect accuracy and 1 is the worst),  provided calibrated probability estimates, ensuring accurate risk assessment, which can guide cost-sensitive retention strategies.
 ---
 ## Tools & Technologies
 
