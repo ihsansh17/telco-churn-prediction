@@ -37,7 +37,13 @@ The dataset is from [Kaggle](https://www.kaggle.com/datasets/johnflag/jb-link-te
 - **Key Metric**: Model 2 achieved a **Brier Score** of 0.08 (where 0 is perfect accuracy and 1 is the worst), indicating that the model’s predicted probabilities are closer to the actual outcomes (0 or 1). The model is also well-calibrated as can be seen below:
 <img src="assets/calibration_curve.png" width="600">
 
+## Making Predictions
+1. **Streamlit Web App**: A simple and interactive web application for users to input customer data and receive churn predictions.
+2. **API**: A FastAPI API hosted on AWS Lambda
+
+
 ---
+
 
 ## Tools & Technologies
 
